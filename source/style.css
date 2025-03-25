@@ -95,8 +95,8 @@ footer {
   display: grid;
   grid-template-columns: 2fr 3fr 3fr;
   grid-gap: 20px;
-  background-image: linear-gradient(rgba(0, 0, 40, 0.6), rgba(0, 0, 40, 0.6)),
-    url("../images/ushuaia-background.JPG");
+  background-image: linear-gradient(rgba(0, 0, 40, 0.5), rgba(0, 0, 40, 0.5)),
+    url("../images/ushuaia-footer.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -174,6 +174,24 @@ footer {
   background-color: rgba(0, 0, 100, 0.9);
 }
 
+.photos {
+  text-align: center;
+  padding: 100px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 100px 0;
+}
+
+.photos img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
 @media (max-width: 768px) {
   header {
     padding: 50px 0;
@@ -215,6 +233,7 @@ footer {
   }
   .hikes {
     padding: 50px;
+    margin: 0px 15px;
   }
   .hike-grid {
     grid-template-columns: 1fr;
@@ -232,5 +251,13 @@ footer {
 
   .hike-header iframe {
     aspect-ratio: 16/9;
+  }
+  .photos {
+    padding: 50px 0;
+    margin: 0px 15px;
+  }
+  .photo-grid {
+    grid-template-columns: 1fr;
+    padding: 50px 0 0 0;
   }
 }
