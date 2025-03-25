@@ -18,34 +18,45 @@ h1 {
   margin: 0 auto;
 }
 
-h2 {
+header h2 {
   font-size: 32px;
   font-weight: 300;
   padding-bottom: 50px;
   margin: 0 auto;
 }
 
-h3 {
-  font-size: 24px;
-  letter-spacing: 5px;
-  margin: 0 auto;
-  font-weight: 300;
-}
-
-h5 {
+section h2 {
   font-size: 44px;
   font-weight: 700;
   color: rgba(0, 0, 100, 0.8);
   margin: 0;
 }
 
-h6 {
+header h3 {
+  font-size: 24px;
+  letter-spacing: 5px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+section h3 {
   font-size: 24px;
   font-weight: 400;
   opacity: 0.25;
   margin: 0;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
+h5 {
+  margin: 0;
+  font-size: 20px;
+}
+
+h6 {
+  margin: 0;
+  font-size: 16px;
+}
 header a {
   font-size: 18px;
   font-weight: 300;
@@ -102,13 +113,56 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
-  margin: 50px 100px;
+  margin: 100px;
 }
 
 .info img {
   max-width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
+}
+
+.hikes {
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 100px;
+}
+
+.hike-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 100px 0;
+}
+
+.hike-card {
+  background-color: white;
+}
+
+.hike-info {
+  text-align: left;
+  padding: 20px;
+}
+
+.hike-card img {
+  max-width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.button {
+  background-color: rgba(0, 0, 100, 0.8);
+  color: white;
+  text-decoration: none;
+  padding: 20px 50px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  transition: all 150ms ease-in-out;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 100, 0.9);
 }
 
 @media (max-width: 768px) {
@@ -118,17 +172,16 @@ footer {
   h1 {
     font-size: 60px;
   }
-  h2 {
+  header h2 {
     font-size: 16px;
   }
-  h3 {
+  header h3 {
     font-size: 12px;
   }
-
-  h5 {
+  section h2 {
     font-size: 24px;
   }
-  h6 {
+  section h3 {
     font-size: 18px;
   }
   p {
@@ -150,5 +203,13 @@ footer {
     grid-template-columns: 1fr;
     grid-gap: 20px;
     margin: 25px 15px;
+  }
+  .hikes {
+    padding: 50px;
+  }
+  .hike-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+    padding: 50px 0;
   }
 }
