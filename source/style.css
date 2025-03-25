@@ -190,6 +190,11 @@ footer {
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
+
+.photos img:hover {
+  transform: scale(1.5);
 }
 
 @media (max-width: 768px) {
