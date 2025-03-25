@@ -138,14 +138,23 @@ footer {
 .hike-card {
   background-color: white;
 }
-
+.hike-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 .hike-info {
   text-align: left;
   padding: 20px;
 }
 
 .hike-card img {
-  max-width: 100%;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.hike-card iframe {
+  width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
 }
@@ -211,5 +220,17 @@ footer {
     grid-template-columns: 1fr;
     grid-gap: 50px;
     padding: 50px 0;
+  }
+
+  .hike-card img {
+    display: none;
+  }
+
+  .hike-header {
+    grid-template-columns: 1fr;
+  }
+
+  .hike-header iframe {
+    aspect-ratio: 16/9;
   }
 }
