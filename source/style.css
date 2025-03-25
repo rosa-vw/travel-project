@@ -266,4 +266,8 @@ footer {
     grid-template-columns: 1fr;
     padding: 50px 0 0 0;
   }
+
+  .photos img:hover {
+    transform: none;
+  }
 }
