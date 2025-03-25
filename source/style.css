@@ -1,3 +1,68 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/ushuaia-background.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 150px 0;
+}
+
 h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 120px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 300;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 24px;
+  letter-spacing: 5px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+header a {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 30px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  margin: 48px 0 0 0;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 50px 0;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 12px;
+  }
+  header a {
+    font-size: 9px;
+    margin: 0 auto;
+  }
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
 }
